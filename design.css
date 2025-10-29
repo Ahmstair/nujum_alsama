@@ -1,0 +1,171 @@
+   body {
+            font-family: "Tahoma", sans-serif;/*نوع الخط والتنسيق*/
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, rgb(255, 239, 199),goldenrod);
+        }
+        header {
+            background: #f6f4f4;
+            color: rgb(13, 12, 12);
+            padding: 20px;
+            text-align: center;
+             background-image:url(pictures/backgroundheadr1.jpg);
+             background-position: center;
+             background-size: cover;
+        
+            
+        }
+        header h1 {
+            margin: 0;
+        }
+        #searchBar {
+            margin: 20px auto;
+            display: block;
+            padding: 10px;
+            width: 60%;
+            border: 2px solid #ff6f61;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+        .courses {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .course {
+            background: rgb(3, 5, 39);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.2s;
+            color: #fff;
+        }
+        .course:hover {
+            transform: scale(1.05);
+        }
+        button:hover{
+            transform: scale(1.09);
+        }
+        .course h2 {
+            color: #ffffff;
+        }
+        .course p {
+            margin: 10px 0;
+        }
+        .course button {
+            margin: 5px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            color: white;
+        }
+        .details-btn {
+            background: #6a82fb;
+        }
+        .register-btn {
+            background: #ff6f61;
+             
+            margin: 10% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            /* width: 50%; */
+            border-radius: 10px;
+            text-align: center;
+        }
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .modal-content {
+            background-color: #fff;
+            margin: 10% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            /* width: 50%; */
+            border-radius: 10px;
+            text-align: center;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .notification {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #6a82fb;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        h3{
+            margin-left: 5%;
+        }
+        .phone{
+            font-size:small;
+        }
+        
+        .logo{
+         height: 150px;
+        width: 150px; 
+        filter: drop-shadow(0 0 15px rgba(255,255,255,0.5))
+       drop-shadow(0 0 8px rgba(0,0,0,0.7));
+
+        }
+        .logo-courses{
+        height: 200px;
+        width: 200px; 
+        margin-right: 30px;
+        }
+    .social{
+        text-align:left ;
+        
+    }
+    .social a{
+        color:#000000;
+        font-size: 30px;
+        margin: 5px;
+    }
+    /* --- التنسيقات الأساسية (للهاتف أولاً) --- */
+.courses {
+    display: grid;
+    /* على الشاشات الصغيرة، اجعلها عموداً واحداً */
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 15px;
+}
+
+/* --- التنسيقات للشاشات الأكبر (الكمبيوتر والتابلت) --- */
+/* @media screen and (min-width: 768px) */
+/* هذا الكود سيُطبق فقط إذا كان عرض الشاشة 768 بكسل أو أكثر */
+@media screen and (min-width: 768px) {
+    .courses {
+        /* ارجع إلى التخطيط الشبكي الذي استخدمته */
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    #searchBar {
+        width: 60%; /* اجعل شريط البحث أعرض على الشاشات الكبيرة */
+    }
+    .modal-content{
+        width: 50%;
+        margin: 15% auto;
+    }
+}
+        

@@ -124,6 +124,7 @@
         .logo{
          height: 150px;
         width: 150px; 
+         align-items:center;
         filter: drop-shadow(0 0 15px rgba(255,255,255,0.5))
        drop-shadow(0 0 8px rgba(0,0,0,0.7));
 
@@ -168,4 +169,5 @@
         margin: 15% auto;
     }
 }
+
         
